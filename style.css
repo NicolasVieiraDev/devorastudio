@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fb;
+    color: #1f1f1f;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    padding: 0 1rem;
+    margin: auto;
+  }
+  
+  .site-header {
+    background-color: #ffffff;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .site-header .logo {
+    height: 40px;
+  }
+  
+  nav {
+    margin-top: 0.5rem;
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .menu li a:hover,
+  .menu li a.active {
+    color: #007bff;
+  }
+  
+  .hero {
+    padding: 5rem 1rem;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-outline {
+    border: 2px solid #007bff;
+    color: #007bff;
+  }
+  
+  .btn-outline:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .about {
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about p {
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    color: #666;
+  }
+  
+  .features {
+    list-style: none;
+    display: grid;
+    gap: 0.8rem;
+    font-size: 1rem;
+  }
+  
+  .site-footer {
+    background-color: #f1f1f1;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .site-footer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .site-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .menu {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .buttons {
+      flex-direction: column;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  }
+  

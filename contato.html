@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Devora Studio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="assets/imagens/favicon.png" type="image/png" />
+</head>
+<body>
+    <header class="site-header container">
+        <img src="assets/imagens/instagram_profile.png" alt="Devora Studio Logo" class="Logo" />
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="portifolio.html">Portifólio</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="about container">
+        <h2>Solicite seu orçamento</h2>
+        <p>Preencha as informações abaixo e vamos conversar sobre o seu projeto.</p>
+    
+        <form action="https://api.whatsapp.com/send" method="get" target="_blank" style="margin-top: 2rem;">
+          <input type="hidden" name="phone" value="5512996367117" />
+          <input type="hidden" name="text" id="whatsappText" value="Olá! Quero um orçamento para meu site." />
+          
+          <div style="display: flex; flex-direction: column; gap: 1rem; max-width: 500px; margin: auto;">
+            <input type="text" placeholder="Seu nome" oninput="updateText()" id="nome" style="padding: 0.8rem; font-size: 1rem;" required>
+            <input type="text" placeholder="Tipo de site que deseja" oninput="updateText()" id="tipo" style="padding: 0.8rem; font-size: 1rem;" required>
+            <button type="submit" class="btn btn-primary">Solicitar orçamento via WhatsApp</button>
+          </div>
+        </form>
+      </section>
+    
+      <footer class="site-footer">
+        <p>&copy; 2025 Devora Studio. Todos os direitos reservados. | <a href="index.html">Voltar ao Início</a></p>
+      </footer>
+    
+      <script>
+        function updateText() {
+          const nome = document.getElementById("nome").value;
+          const tipo = document.getElementById("tipo").value;
+          const msg = `Olá! Me chamo ${nome} e gostaria de um orçamento para um site do tipo: ${tipo}.`;
+          document.getElementById("whatsappText").value = msg;
+        }
+      </script>
+</body>
+</html>
