@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante [NOME] | Gastronomia Premiado</title>
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --dark: #1A1A1A;
+            --light: #F5F5F5;
+            --wood: #8B4513;
+            --white: #FFFFFF;
+        }
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            background: var(--light);
+            color: var(--dark);
+            margin: 0;
+            line-height: 1.6;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+        }
+        h1, h2, h3 {
+            font-weight: 700;
+        }
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+        }
+        .gold-text {
+            color: var(--gold);
+        }
+        .btn-reserva {
+            background: var(--gold);
+            color: var(--dark);
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .btn-reserva:hover {
+            background: var(--dark);
+            color: var(--gold);
+        }
+        .menu-section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .menu-item {
+            background: var(--white);
+            border: 1px solid var(--gold);
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid var(--gold);
+            margin-bottom: 1rem;
+        }
+        .wine-list {
+            background: url('https://images.unsplash.com/photo-1558160074-4d7d8bdf4256?ixlib=rb-4.0.3') center/cover;
+            padding: 4rem 2rem;
+            color: var(--white);
+            text-align: center;
+        }
+        .about-section {
+            background: var(--dark);
+            color: var(--white);
+            padding: 5rem 2rem;
+        }
+        .rating {
+            color: var(--gold);
+            font-size: 1.5rem;
+            letter-spacing: 5px;
+        }
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            z-index: 100;
+        }
+        footer {
+            background: var(--wood);
+            color: var(--white);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        .social-links a {
+            color: var(--white);
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>RESTAURANTE <span class="gold-text">[NOME]</span></h1>
+            <p style="font-size: 1.5rem; margin-bottom: 2rem;">Excelência gastronômica desde 1985</p>
+            <button class="btn-reserva">RESERVAR MESA</button>
+        </div>
+    </section>
+
+    <!-- Principais Pratos -->
+    <section class="menu-section">
+        <h2 style="text-align: center;"><span class="gold-text">Nossas</span> Especialidades</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">Pratos preparados com ingredientes selecionados e técnicas tradicionais</p>
+        
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3" alt="Prato 1">
+                <h3>Filé Mignon Wellington</h3>
+                <p>Filé mignon premium envolto em massa folhada com foie gras e cogumelos silvestres</p>
+                <p class="gold-text">R$ 189,90</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3" alt="Prato 2">
+                <h3>Risoto de Trufas Negras</h3>
+                <p>Arroz arbóreo cozido no caldo de carne com trufas frescas da temporada</p>
+                <p class="gold-text">R$ 159,90</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1560717843-7b3a5f5b3b3a?ixlib=rb-4.0.3" alt="Prato 3">
+                <h3>Salmão com Crosta de Pistache</h3>
+                <p>Salmão selvagem com crosta crocante de pistache e molho de vinho branco</p>
+                <p class="gold-text">R$ 149,90</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cardápio de Vinhos -->
+    <section class="wine-list">
+        <h2 style="margin-bottom: 2rem;"><span class="gold-text">Carta</span> de Vinhos</h2>
+        <div style="background: rgba(0,0,0,0.7); padding: 2rem; max-width: 800px; margin: 0 auto;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; text-align: left;">
+                <div>
+                    <h3 class="gold-text">Tintos</h3>
+                    <p>Château Lafite Rothschild 2010</p>
+                    <p>Quinta do Noval Nacional 2015</p>
+                    <p>Vega Sicilia Único 2012</p>
+                </div>
+                <div>
+                    <h3 class="gold-text">Brancos</h3>
+                    <p>Dom Pérignon Vintage 2013</p>
+                    <p>Château d'Yquem 2015</p>
+                    <p>Cloudy Bay Sauvignon Blanc 2021</p>
+                </div>
+            </div>
+            <button class="btn-reserva" style="margin-top: 2rem;">VER CARTA COMPLETA</button>
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section class="about-section">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="text-align: center; margin-bottom: 3rem;"><span class="gold-text">Nossa</span> História</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3" alt="Restaurante" style="width: 100%; border: 3px solid var(--gold);">
+                </div>
+                <div>
+                    <p>Fundado em 1985 pelo Chef [Nome], nosso restaurante nasceu da paixão pela gastronomia tradicional com toques contemporâneos. Localizado em um casarão histórico do século XIX, preservamos a arquitetura original enquanto oferecemos uma experiência culinária única.</p>
+                    <p>Com duas estrelas Michelin e prêmios internacionais, continuamos a tradição familiar com o mesmo cuidado e excelência de sempre.</p>
+                    <div style="margin-top: 2rem;">
+                        <p>Avaliação dos clientes:</p>
+                        <div class="rating">
+                            ★ ★ ★ ★ ★
+                        </div>
+                        <p>4.9/5 (1.247 avaliações)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div style="margin-bottom: 2rem;">
+            <h3>Restaurante [NOME]</h3>
+            <p>Rua Exemplo, 123 - Centro Histórico</p>
+            <p>Horário: Terça a Domingo, 19h às 23h</p>
+        </div>
+        <div style="margin-bottom: 2rem;">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="mailto:contato@restaurante.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div>
+            <p>© 2023 Restaurante [NOME]. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botão do WhatsApp -->
+    <a href="https://wa.me/5511999999999" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Função para o formulário de reserva
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Reserva enviada com sucesso! Entraremos em contato para confirmação.');
+        });
+    </script>
+</body>
+</html>
